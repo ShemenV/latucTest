@@ -33,7 +33,7 @@ public partial class LatucCodeContext : DbContext
     public virtual DbSet<UserRole> UserRoles { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseMySql("server=localhost;user=root;password=Qwerty123;database=latuc_code", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.31-mysql"));
+        => optionsBuilder.UseMySql("server=localhost;user=root;password=1234;database=latuc_code", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.31-mysql"));
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
